@@ -3,6 +3,8 @@ import ImageZoom from 'react-medium-image-zoom'
 import styled from 'styled-components'
 
 const ImageWrapper = styled.div`
+  width: 100%;
+  height: 100%;
   margin: 0.5rem;
   transition: all 200ms ease;
   :hover {
