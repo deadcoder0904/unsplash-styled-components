@@ -15,18 +15,18 @@ const ImageWrapper = styled.div`
 
 export const Pic = ({ src, i }) => {
   const alt = `Unsplash Redesign #${i}`
+  const imageProps = { src, alt }
   return (
     <ImageWrapper>
       <ImageZoom
         image={{
-          src,
-          alt,
+          ...imageProps,
           style: {
             width: '37rem',
             height: '48rem',
           },
         }}
-        zoomImage={{ src, alt }}
+        zoomImage={imageProps}
       />
     </ImageWrapper>
   )
