@@ -20,19 +20,6 @@ const darkTheme = () => ({
   ...themes['dark'],
 })
 
-const GridWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-`
-
-const Grid = styled.div`
-  padding-top: 8.2rem;
-  padding-left: 23rem;
-  display: grid;
-  grid-template-columns: repeat(3, 38rem);
-  margin-bottom: 1.5rem;
-`
-
 const Nav = styled.nav`
   display: flex;
   align-items: center;
@@ -118,6 +105,19 @@ const SunIcon = styled(SunSVG)`
   height: 2rem;
   margin-left: auto;
   cursor: pointer;
+`
+
+const GridWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`
+
+const Grid = styled.div`
+  padding-top: 8.2rem;
+  padding-left: 23rem;
+  display: grid;
+  grid-template-columns: repeat(3, 38rem);
+  margin-bottom: 1.5rem;
 `
 
 const App = () => {
