@@ -10,6 +10,16 @@ import { Pic } from './components/Pic'
 import { pics } from './utils/pics'
 import { themes } from './utils/themes'
 
+const lightTheme = () => ({
+  ...themes['common'],
+  ...themes['light'],
+})
+
+const darkTheme = () => ({
+  ...themes['common'],
+  ...themes['dark'],
+})
+
 const GridWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -109,16 +119,6 @@ const SearchBar = styled.input`
   font-size: 1.4rem;
   font-weight: 300;
 `
-
-const lightTheme = () => ({
-  ...themes['common'],
-  ...themes['light'],
-})
-
-const darkTheme = () => ({
-  ...themes['common'],
-  ...themes['dark'],
-})
 
 const App = () => {
   const [theme, setTheme] = useState(lightTheme())
