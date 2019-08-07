@@ -87,20 +87,6 @@ const SearchWrapper = styled.div`
   }
 `
 
-const SunIcon = styled(SunSVG)`
-  width: 2rem;
-  height: 2rem;
-  margin-left: auto;
-  cursor: pointer;
-`
-
-const MoonIcon = styled(MoonSVG)`
-  width: 2rem;
-  height: 2rem;
-  margin-left: auto;
-  cursor: pointer;
-`
-
 const SearchIcon = styled(SearchSVG)`
   fill: #9aa5b1;
   width: 1.6rem;
@@ -118,6 +104,20 @@ const SearchBar = styled.input`
   background: transparent;
   font-size: 1.4rem;
   font-weight: 300;
+`
+
+const MoonIcon = styled(MoonSVG)`
+  width: 2rem;
+  height: 2rem;
+  margin-left: auto;
+  cursor: pointer;
+`
+
+const SunIcon = styled(SunSVG)`
+  width: 2rem;
+  height: 2rem;
+  margin-left: auto;
+  cursor: pointer;
 `
 
 const App = () => {

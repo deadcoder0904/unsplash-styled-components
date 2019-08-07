@@ -3,8 +3,6 @@ import ImageZoom from 'react-medium-image-zoom'
 import styled from 'styled-components'
 
 const ImageWrapper = styled.div`
-  width: 100%;
-  height: 100%;
   margin: 0.5rem;
   transition: all 200ms ease;
   :hover {
@@ -19,19 +17,10 @@ export const Pic = ({ src, i }) => {
   return (
     <ImageWrapper>
       <ImageZoom
-        image={{
-          ...imageProps,
-          style: {
-            width: '37rem',
-            height: '48rem',
-          },
-        }}
-        zoomImage={{
-          ...imageProps,
-          style: {
-            width: '102.4rem',
-            height: '72rem',
-          },
+        image={imageProps}
+        zoomImage={imageProps}
+        defaultStyles={{
+          image: { width: '37rem', height: '48rem' },
         }}
       />
     </ImageWrapper>
