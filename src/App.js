@@ -122,8 +122,8 @@ const SearchBar = styled.input`
 
 const App = () => {
   const [theme, setTheme] = useState(lightTheme())
-  const setDarkTheme = () => setTheme({ ...darkTheme(), type: 'dark' })
-  const setLightTheme = () => setTheme({ ...lightTheme(), type: 'light' })
+  const setDarkTheme = () => setTheme(darkTheme())
+  const setLightTheme = () => setTheme(lightTheme())
   return (
     <ThemeProvider theme={theme}>
       <>
