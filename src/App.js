@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styled, { ThemeProvider } from 'styled-components'
+import styled, { css, ThemeProvider } from 'styled-components'
 import { ReactComponent as MoonSVG } from './assets/logos/moon.svg'
 import { ReactComponent as SearchSVG } from './assets/logos/search.svg'
 import { ReactComponent as SunSVG } from './assets/logos/sun.svg'
@@ -93,18 +93,19 @@ const SearchBar = styled.input`
   font-weight: 300;
 `
 
-const MoonIcon = styled(MoonSVG)`
+const ThemeIcon = css`
   width: 2rem;
   height: 2rem;
   margin-left: auto;
   cursor: pointer;
 `
 
+const MoonIcon = styled(MoonSVG)`
+  ${ThemeIcon}
+`
+
 const SunIcon = styled(SunSVG)`
-  width: 2rem;
-  height: 2rem;
-  margin-left: auto;
-  cursor: pointer;
+  ${ThemeIcon}
 `
 
 const GridWrapper = styled.div`
